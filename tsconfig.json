@@ -1,0 +1,32 @@
+{
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "compilerOptions": {
+    "types": [
+      "@types/styled-components-react-native",
+      "jest"
+    ],
+    "strict": false,
+    "allowJs": true,
+    "jsx": "react-native",
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "isolatedModules": false,
+    "resolveJsonModule": true,
+    "baseUrl": "./src",
+    "paths": {
+      "~/*": [
+        "*"
+      ]
+    }
+  },
+  "rules": {
+    "@typescript-eslint/no-namespace": "off",
+    "no-declare": "off",
+    "import/export": "off"
+  },
+  "typeRoots": [
+    "./src/@types"
+  ]
+}
